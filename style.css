@@ -14,9 +14,9 @@
   color: #fcf5e5;
   background-color: #26282a;
   clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
-  height: 80vh;
   width: 90%;
   margin: 0rem auto;
+  padding-bottom: 7rem;
 }
 
 /* Home Header */
@@ -155,17 +155,15 @@
   color: #fcf5e5;
   background-color: #26282a;
   clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
-  height: 170vh;
   width: 90%;
   margin: 0rem auto;
-  padding: 10rem 0rem;
+  padding: 10rem 0rem 20rem 0rem;
 }
 
 .challenge-table {
   border-collapse: collapse;
   max-width: 80%;
   transform: rotate(-3deg);
-
   margin: 0rem auto;
 }
 
