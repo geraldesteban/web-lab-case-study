@@ -16,7 +16,8 @@
   </head>
   <body>
     <div class="container">
-      <section class="home">
+      <!-- Home Page -->
+      <section id="#" class="home">
         <div class="home-header">
           <h2 class="home-title margin-fivepx">Frontend Mentor Challenges</h2>
           <p class="home-gerald margin-fivepx">Code by Gerald C. Esteban</p>
@@ -71,7 +72,9 @@
           </ul>
         </div>
       </section>
+      <!-- Challenges Page -->
       <section class="challenge">
+        <!-- Newbie -->
         <h2 class="challenge-title challenge-title-newbie">NEWBIE</h2>
         <table class="challenge-table">
           <tr>
@@ -207,6 +210,7 @@
             </td>
           </tr>
         </table>
+        <!-- Junior -->
         <h2 class="challenge-title challenge-title-junior">JUNIOR</h2>
         <table class="challenge-table">
           <tr>
@@ -294,6 +298,7 @@
             </td>
           </tr>
         </table>
+        <!-- Intermediate -->
         <h2 class="challenge-title challenge-title-intermediate">
           INTERMEDIATE
         </h2>
@@ -345,6 +350,42 @@
             </td>
           </tr>
         </table>
+      </section>
+      <!-- Contact -->
+      <section class="contact">
+        <form action="#" class="contact-form">
+          <h2 class="contact-title">CONTACT</h2>
+          <input
+            class="contact-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full name"
+            required
+          /><br />
+
+          <input
+            class="contact-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            required
+          /><br />
+
+          <textarea
+            class="contact-input"
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Message"
+            required
+          ></textarea
+          ><br />
+
+          <input class="contact-btn" type="submit" value="Submit" />
+        </form>
       </section>
     </div>
   </body>
