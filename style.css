@@ -324,6 +324,66 @@ td {
   /* border: 5px solid #f1b604; */
 }
 
+/* Contact */
+.contact {
+  color: #fcf5e5;
+  background-color: #26282a;
+  clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
+  width: 90%;
+  margin: 0rem auto;
+  padding: 10rem 0rem 5rem 0rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.contact-title {
+  font-size: 3.5rem;
+  text-align: center;
+  transform: rotate(-10deg);
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0rem auto;
+  padding: 5rem;
+}
+
+.contact-input {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  resize: none;
+}
+
+.contact-input:focus:invalid:placeholder-shown {
+  border-bottom: 3px solid red;
+}
+
+.contact-input:focus:valid {
+  border-bottom: 3px solid green;
+}
+
+.contact-btn {
+  padding: 0.5rem 5rem;
+  font-size: 1.5rem;
+  display: block;
+  margin: auto;
+  transform: rotate(-5deg);
+  border: none;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* Reusable Styles */
 .margin-fivepx {
   margin-bottom: 0.5rem;
@@ -403,64 +463,4 @@ td {
   100% {
     transform: translateY(0);
   }
-}
-
-/* Contact */
-.contact {
-  color: #fcf5e5;
-  background-color: #26282a;
-  clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
-  width: 90%;
-  margin: 0rem auto;
-  padding: 10rem 0rem 5rem 0rem;
-
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-  }
-}
-
-.contact-title {
-  font-size: 3.5rem;
-  text-align: center;
-  transform: rotate(-10deg);
-  margin-bottom: 3rem;
-}
-
-.contact-form {
-  width: 60%;
-  margin: 0rem auto;
-  padding: 5rem;
-}
-
-.contact-input {
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 3rem;
-  outline: none;
-  border: none;
-  border-bottom: 3px solid transparent;
-  resize: none;
-}
-
-.contact-input:focus:invalid:placeholder-shown {
-  border-bottom: 3px solid red;
-}
-
-.contact-input:focus:valid {
-  border-bottom: 3px solid green;
-}
-
-.contact-btn {
-  padding: 0.5rem 5rem;
-  font-size: 1.5rem;
-  display: block;
-  margin: auto;
-  transform: rotate(-5deg);
-  border: none;
-  cursor: pointer;
-}
-
-.contact-btn:hover {
-  background-color: rgba(255, 255, 255, 0.5);
 }
