@@ -256,6 +256,10 @@ td {
   animation: arrow 1.5s ease-in-out infinite;
   position: absolute;
   bottom: 0px;
+
+  @media only screen and (max-width: 600px) {
+    animation: arrowMobile 1.5s ease-in-out infinite;
+  }
 }
 
 /* Reusable */
@@ -272,6 +276,17 @@ td {
   to {
     opacity: 1;
     translate: 35px;
+  }
+}
+
+@keyframes arrowMobile {
+  from {
+    opacity: 0.2;
+    translate: 5px;
+  }
+  to {
+    opacity: 1;
+    translate: 15px;
   }
 }
 
