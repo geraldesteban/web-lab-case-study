@@ -23,12 +23,16 @@ html {
   }
 }
 
+body {
+  background-color: #f3f3f3;
+}
+
 .container {
   font-family: "Josefin Sans", sans-serif;
   padding: 5rem;
 }
 
-/* Home Page */
+/* Home */
 .home {
   color: #fcf5e5;
   background-color: #26282a;
@@ -42,9 +46,7 @@ html {
   }
 }
 
-/* Home Header */
 .home-header {
-  /* background: orange; */
   padding: 8rem 0rem 0rem 0rem;
   text-align: center;
 }
@@ -53,66 +55,37 @@ html {
   font-size: 3rem;
   padding: 0.5rem 0rem;
   width: 50rem;
+  font-weight: lighter;
   margin: 0rem auto;
 }
 
-.home-title:hover {
-  transform: rotate(-5deg);
-  color: #26282a;
-  background-color: #87ceeb;
-}
-
-.home-frontend {
-  color: #87ceeb;
-}
-
-.home-freecodecamp {
-  color: #0a0a23;
-}
-
 .home-gerald {
+  font-weight: lighter;
   font-size: 1.5rem;
 }
 
 .home-language {
+  font-weight: lighter;
   font-size: 1.5rem;
 }
 
-.home-icons {
-  font-size: 3rem;
-  margin: 0rem 1rem;
+.home-img {
+  margin: 0rem 0.5rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
-.home-html {
-  color: #e34c26;
-}
-
-.home-css {
-  color: #264de4;
-}
-
-.home-sass {
-  color: #cd6799;
-}
-
-.home-js {
-  color: #f0db4f;
-}
-
-/* Home Description */
 .home-description {
-  /* background: white; */
   font-size: 2.5rem;
-  width: 70%;
-  padding: 1rem 0rem;
-  margin: 4rem auto;
+  width: 80%;
+  font-weight: lighter;
+  margin: 2rem auto 5rem auto;
 }
 
-/* Home Footer */
-.home-footer {
-  /* background: #f0db4f; */
-}
-
+/* Footer */
 .home-footer-ul {
   display: flex;
   justify-content: center;
@@ -122,58 +95,38 @@ html {
   list-style-type: none;
   margin: 0rem 1rem;
 }
+
 .home-footer-link {
   text-decoration: none;
 }
 
 .home-footer-icon {
-  color: #fff;
+  color: #fcf5e5;
   font-size: 1.5rem;
 
-  border: 2px solid #fff;
+  border: 1px solid #fcf5e5;
   border-radius: 50%;
-  padding: 0.5rem;
+  padding: 0.7rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 100%;
+  }
+}
+
+.home-footer-icon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .home-footer-fem {
-  padding: 0.4rem 0.7rem;
-  animation: bounceFem 1.5s ease-in-out infinite 1s;
+  padding: 0.6rem 0.9rem;
+  animation: bounce 1.5s ease-in-out infinite;
+
+  @media only screen and (max-width: 600px) {
+    animation: bounceMobile 1.5s ease-in-out infinite;
+  }
 }
 
-.home-footer-fem:hover {
-  padding: 0.4rem 0.7rem;
-  animation: bounceFem 0s ease-in-out infinite 1s;
-  color: #87ceeb;
-  border: 2px solid #87ceeb;
-  position: relative;
-  top: -1rem;
-}
-
-.home-footer-git {
-  animation: bounceGit 1.5s ease-in-out infinite 2s;
-}
-
-.home-footer-git:hover {
-  animation: bounceFem 0s ease-in-out infinite 1s;
-  color: #6e5494;
-  border: 2px solid #6e5494;
-  position: relative;
-  top: -1rem;
-}
-
-.home-footer-fb {
-  animation: bounceFb 1.5s ease-in-out infinite 3s;
-}
-
-.home-footer-fb:hover {
-  animation: bounceFem 0s ease-in-out infinite 1s;
-  color: #4267b2;
-  border: 2px solid #4267b2;
-  position: relative;
-  top: -1rem;
-}
-
-/* Challenge Page */
+/* Challenge */
 .challenge {
   color: #fcf5e5;
   background-color: #26282a;
@@ -190,7 +143,6 @@ html {
 .challenge-table {
   border-collapse: collapse;
   max-width: 80%;
-  transform: rotate(-3deg);
   margin: 0rem auto;
 
   @media only screen and (max-width: 600px) {
@@ -200,49 +152,15 @@ html {
 
 .challenge-title {
   font-size: 3rem;
-  transform: rotate(-10deg);
+  font-weight: lighter;
   text-align: center;
-  margin: 5rem auto;
+  margin: 2rem auto;
   padding: 1rem 0rem;
   width: 30rem;
-}
-
-.challenge-title-newbie {
-  color: #6abecd;
-}
-
-.challenge-title-newbie:hover {
-  background-color: #6abecd;
-}
-
-.challenge-title-junior {
-  color: #aad742;
-}
-
-.challenge-title-junior:hover {
-  background-color: #aad742;
-}
-
-.challenge-title-intermediate {
-  color: #f1b604;
-}
-
-.challenge-title-intermediate:hover {
-  background-color: #f1b604;
-}
-
-.challenge-title:hover {
-  color: #26282a;
-  padding: 1rem 0rem;
-  width: 30rem;
-}
-
-.challenge-table-link {
-  cursor: pointer;
-  text-transform: uppercase;
 }
 
 .challenge-table-links {
+  font-weight: lighter;
   color: #fcf5e5;
   text-decoration: none;
 }
@@ -252,60 +170,13 @@ html {
 }
 
 .challenge-table-chlng {
+  font-weight: lighter;
   text-transform: uppercase;
-  font-weight: bold;
   width: 40rem;
 }
 
-.challenge-huddlesingle {
-  color: #9400d3;
-}
-
-.challenge-result {
-  color: #2e2be9;
-}
-
-.challenge-vehicle {
-  color: #e28625;
-}
-.challenge-socpro {
-  color: #512051;
-}
-
-.challenge-article {
-  color: #234f1e;
-}
-
-.challenge-fetsec {
-  color: #ea5454;
-}
-
-.challenge-easybank {
-  color: #31d35c;
-}
-
-.challenge-chatapp {
-  color: #ff80ff;
-}
-
-.challenge-clipboard {
-  color: #6173ff;
-}
-
-.challenge-fylopage {
-  color: #585989;
-}
-
-.challenge-fylostorage {
-  color: #0c122c;
-}
-
-.challenge-testi {
-  color: #733fc8;
-}
-
 td {
-  /* border: 5px solid #aad742; */
+  border: 1px solid;
   padding: 1rem;
   width: 10rem;
   text-align: center;
@@ -316,14 +187,6 @@ td {
   }
 }
 
-.challenge-junior {
-  /* border: 5px solid #6abecd; */
-}
-
-.challenge-intermediate {
-  /* border: 5px solid #f1b604; */
-}
-
 /* Contact */
 .contact {
   color: #fcf5e5;
@@ -331,7 +194,7 @@ td {
   clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
   width: 90%;
   margin: 0rem auto;
-  padding: 10rem 0rem 5rem 0rem;
+  padding: 2rem 0rem;
 
   @media only screen and (max-width: 600px) {
     width: 100%;
@@ -340,8 +203,8 @@ td {
 
 .contact-title {
   font-size: 3.5rem;
+  font-weight: lighter;
   text-align: center;
-  transform: rotate(-10deg);
   margin-bottom: 3rem;
 }
 
@@ -352,52 +215,74 @@ td {
 }
 
 .contact-input {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
   width: 100%;
   padding: 1rem;
   margin-bottom: 3rem;
   outline: none;
   border: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid;
   resize: none;
 }
 
 .contact-input:focus:invalid:placeholder-shown {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #ff585f;
 }
 
 .contact-input:focus:valid {
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid #5ec576;
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .contact-btn {
-  padding: 0.5rem 5rem;
-  font-size: 1.5rem;
+  color: #fcf5e5;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
   display: block;
-  margin: auto;
-  transform: rotate(-5deg);
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.contact-btn:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+.contact-arrow {
+  font-size: 3rem;
+  animation: arrow 1.5s ease-in-out infinite;
+  position: absolute;
+  bottom: 0px;
 }
 
-/* Reusable Styles */
+/* Reusable */
 .margin-fivepx {
   margin-bottom: 0.5rem;
 }
 
-/* Animations */
-@keyframes bounceFem {
+/* Animation */
+@keyframes arrow {
+  from {
+    opacity: 0.2;
+    translate: 15px;
+  }
+  to {
+    opacity: 1;
+    translate: 35px;
+  }
+}
+
+@keyframes bounce {
   0% {
     transform: translateY(0);
   }
   20% {
     transform: translateY(-20px);
     color: #87ceeb;
-    border: solid 2px #87ceeb;
+    border: solid 1px #87ceeb;
   }
   40% {
     transform: translateY(0);
@@ -408,57 +293,32 @@ td {
   80% {
     transform: translateY(0);
     color: #87ceeb;
-    border: solid 2px #87ceeb;
+    border: solid 1px #87ceeb;
   }
   100% {
     transform: translateY(0);
   }
 }
 
-@keyframes bounceGit {
+@keyframes bounceMobile {
   0% {
     transform: translateY(0);
   }
   20% {
-    transform: translateY(-20px);
-    color: #6e5494;
-    border: solid 2px #6e5494;
+    transform: translateY(-10px);
+    color: #87ceeb;
+    border: solid 1px #87ceeb;
   }
   40% {
     transform: translateY(0);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   80% {
     transform: translateY(0);
-    color: #6e5494;
-    border: solid 2px #6e5494;
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounceFb {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-20px);
-    color: #4267b2;
-    border: solid 2px #4267b2;
-  }
-  40% {
-    transform: translateY(0);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-  80% {
-    transform: translateY(0);
-    color: #4267b2;
-    border: solid 2px #4267b2;
+    color: #87ceeb;
+    border: solid 1px #87ceeb;
   }
   100% {
     transform: translateY(0);
